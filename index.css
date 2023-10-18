@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 25rem;
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 80%;
+}
+
+.logo{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.image{
+    margin-top: 2rem;
+}
+
+.timing{
+    margin-top: 1rem;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text_area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2rem;
+}
+
+.title{
+    font-weight: bold;
+}
+
+.progress-container {
+    margin-top: 2rem;
+    width: 80%;
+    margin: 20px auto;
+    background: #ccc;
+    height: 10px;
+    border-radius: 4rem;
+    position: relative;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background: #4CAF50;
+    border-radius: 4rem;
+    position: absolute;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+}
+
+.navigation{
+    margin-top: 1rem;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.player_image{
+    position: relative;
+}
+.circle{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1;
+    top: 44%;
+    left: 38%;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+
+.text_size{
+    font-size: 1.5rem;
+}
+
+.active{
+    display: none;
+}
+
+.image{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    filter: drop-shadow(1px 5px 10px rgba(53, 53, 53, 0.477));
+    z-index: 0;
+}
+.animation{
+    animation: rotate 4s 100ms infinite;
+    transition: all;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width:443px) {
+    .image{
+        width: 12rem;
+        height: 12rem;
+    }
+    .circle{
+        top: 41%;
+        left: 35%;
+    }
+}
